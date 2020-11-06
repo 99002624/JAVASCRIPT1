@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function validate(){
+        //     var city1 = document.getElementById("CITY1").value;
+        //     var name1 = document.getElementById("NAME1").value;
+        //     document.getElementById("display").innerHTML="welcome"+" "+city1+" "+name1;
+        // }
+        
+    $(document).ready(function(){
+        $('#but').click(function(){
+            username=$('#NAME1').val();
+            city=$('#CITY1').val();
+            $('#display').html('welcome'+username+'form'+city);
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <h2>NAME</h2>
+    <input type="text" name="username" id="NAME1">
+    <h2>CITY</h2>
+    <input type="text" name="city" id="CITY1">
+    <input type="button" value="submit" id="but" onclick="validate()">
+    <div id="display"></div>
+</body>
+</html>
